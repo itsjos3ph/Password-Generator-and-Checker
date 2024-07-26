@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Indicator and Generator</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    
+    <!-- Header for the page -->
+    <div class="head">
+        <header>
+            <h1>
+                Test Your Password Here or Generate One!
+            </h1>
+            <p>
+                Make sure to include Letters, Numbers, and Symbols for the most protected passwords.
+            </p>
+        </header>
+    </div>
+
+    <!-- Container for both strength indicator and generator -->
+    <div class="container">
+        <h3>It is important to make sure you have a secure password on all your platforms. Here is a password checker to tell you if you have the requirements for a <span class="highlight-red">weak</span> / <span class="highlight-yellow">medium</span> / <span class="highlight-green">strong</span> password.</h3>
+        
+        <!-- Password Checker Section -->
+        <div class="input-box">
+            <input type="password" id="password" placeholder="Password: ">
+            <button type="button" id="togglePassword"><img src="images/icons8-eye-24.png" alt="Show Password"></button>
+            <button type="button" id="pastePassword">Paste</button>
+            <p id="message">Password is <span id="strength"></span></p>
+        </div>
+
+        <!-- Password Generator Section -->
+        <div class="generator-box">
+            <h3>If you don't have a password then that's okay! Use the built-in password generator to help!</h3>
+
+            <input type="text" id="generatedPassword" placeholder="Generated Password" readonly>
+            <button type="button" id="generatePassword">Generate Password</button>
+            <button type="button" id="copyPassword">Copy to Clipboard</button>
+        </div>
+    </div>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
