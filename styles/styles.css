@@ -9,12 +9,10 @@
     margin: 10px;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px white,
-        1px 2px 1px gray;
+    text-shadow: 1px 1px 1px white, 1px 2px 1px gray;
 }
 
 .container {
-    height: 100vh;
     width: 100%;
     background: #201f21;
     display: flex;
@@ -27,7 +25,8 @@
 .container h3 {
     color: #fff;
     margin-bottom: 20px;
-    width: 875px;
+    width: 90%;
+    max-width: 875px;
 }
 
 .input-box {
@@ -134,4 +133,47 @@ button img {
 
 .generator-box button#copyPassword {
     background: #2196F3;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h3 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .input-box input, .generator-box input {
+        height: 50px;
+        padding: 0 20px;
+    }
+
+    .input-box button img, button img {
+        width: 30px;
+    }
+
+    .input-box button, .generator-box button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .input-box {
+        width: 90%;
+    }
+
+    .generator-box {
+        padding-top: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
